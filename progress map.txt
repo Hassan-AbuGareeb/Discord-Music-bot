@@ -14,6 +14,9 @@
 
 - later on will add pause 
 
+- will play from spotify, maybe from youtube later on.
+
 - and play a playlist
 
-- will play from spotify, maybe from youtube later on.
+- add UI for the bot too
+
