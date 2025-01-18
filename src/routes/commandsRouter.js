@@ -1,3 +1,4 @@
+//imports
 require("../controllers/commandsController")
 const express = require('express');
 const {
@@ -5,14 +6,19 @@ const {
     playCommand,
     stopCommand,
     pauseCommand,
-    resumeCommand
- } = require("../controllers/commandsController");
+    resumeCommand,
+    pingCommand
+} = require("../controllers/commandsController");
+
+//init
 const router = express.Router();
 
-router.get('/', testCommand);
+//routes
+router.post('/', pingCommand);
+router.post('/test', testCommand);
 router.post('/play', playCommand);
-router.get('/stop', stopCommand);
-router.get('/pause', pauseCommand);
-router.get('/resume', resumeCommand);
+router.post('/stop', stopCommand);
+router.post('/pause', pauseCommand);
+router.post('/resume', resumeCommand);
 
 module.exports = router;
