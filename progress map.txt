@@ -1,0 +1,19 @@
+- check code structure and routing thingies
+
+- project structure
+
+- read more in discord docs
+
+- learn how to stream without full download
+
+- create bot structure and command
+
+- first it will only play and stop
+
+- add the ability to create commands from discord ?
+
+- later on will add pause 
+
+- and play a playlist
+
+- will play from spotify, maybe from youtube later on.
