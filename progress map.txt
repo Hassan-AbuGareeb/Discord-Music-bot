@@ -1,6 +1,10 @@
 - check code structure and routing thingies
 
 - project structure
+	-more on the structure
+	-create actual commands
+	-remove old commands
+	-register to bot
 
 - read more in discord docs
 
