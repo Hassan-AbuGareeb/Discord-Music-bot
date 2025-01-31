@@ -3,3 +3,5 @@ env
 .env
 progress map.txt
 Notes.txt
+*.mp3
+*.ogg

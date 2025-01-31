@@ -13,6 +13,8 @@
 
 - first it will only play and stop
 
+- remove test commands
+
 - add the ability to create commands from discord ?
 
 - later on will add pause 
