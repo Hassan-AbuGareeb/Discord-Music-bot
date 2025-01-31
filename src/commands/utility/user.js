@@ -62,12 +62,5 @@ module.exports = {
         player.on('error', (error) => {
             console.error('Error playing audio:', error);
         });
-
-        // Stop the song after 20 seconds
-        setTimeout(async () => {
-            player.stop();
-            connection.destroy();
-            await interaction.followUp("Song finished playing. Goodbye!");
-        }, 10000);
     }
 };
