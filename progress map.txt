@@ -3,10 +3,9 @@
 - project structure
 	-more on the structure
 	-create actual commands
-	-remove old commands
 	-register to bot
 
-- read more in discord docs
+- read more in discord js docs
 
 - learn how to stream without full download
 
