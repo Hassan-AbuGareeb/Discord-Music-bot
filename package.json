@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -r dotenv/config src/index.js dotenv_config_path=env/local.env",
+    "start": "node -r dotenv/config src/index.js dotenv_config_path=env/local.env",
     "deploy-commands": "node -r dotenv/config src/deploy-commands.js dotenv_config_path=env/local.env",
     "delete-commands": "node -r dotenv/config src/delete-commands.js dotenv_config_path=env/local.env"
   },
