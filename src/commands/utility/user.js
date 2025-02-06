@@ -4,6 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const { createReadStream } = require('node:fs');
 const { execSync } = require('child_process');
+const player = require("../../player");
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -29,13 +30,6 @@ module.exports = {
             adapterCreator: currentVoiceChannel.guild.voiceAdapterCreator,
         });
 
-        // Create the audio player
-        const player = createAudioPlayer({
-            behaviors: {
-                noSubscriber: NoSubscriberBehavior.Play,
-            }
-        });
-
         // Specify the song path
         const songPath = path.join(__dirname, 'song.ogg');
         console.log(songPath);
@@ -53,8 +47,6 @@ module.exports = {
 
         // Subscribe the player to the connection
         connection.subscribe(player);
-
-        // Play the resource
         player.play(resource);
 
         await interaction.followUp("song")
